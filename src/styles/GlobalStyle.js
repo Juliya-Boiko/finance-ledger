@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: #333333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
