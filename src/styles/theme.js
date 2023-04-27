@@ -24,7 +24,9 @@ export const theme = {
   fontWeight: {
     regular: 400,
     medium: 600,
-  }
+  },
+
+  transition: 'all 250ms ease-in-out'
     // spaces: {
   //   xxs: '10px',
   //   xs: '20px',
