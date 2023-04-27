@@ -10,15 +10,16 @@ export const theme = {
     brand: {
       white: '#ffffff',
       black: '#333333',
-      green: '#28A745;',
+      green: '#2EBF4F',
     },
     grayScale: {
       gray2: '#808080',
       gray1: '#F4F4F4'
     },
-    support: {
-      info: ' #0284D0',
-    },
+    complementary: {
+      green: '#28A745',
+      blue: ' #0284D0',
+    }
   },
   
   fontWeight: {

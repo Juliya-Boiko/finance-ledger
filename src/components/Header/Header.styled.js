@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderSection = styled.header`
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 22px 0 0 0;
   color: ${p => p.theme.colors.brand.white};
-  background-color: lightgreen;
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
     padding: 16px 0 0 0;
+  }
+  @media screen and (min-width: ${p => p.theme.breakpoints.desktop}) {
+    padding: 32px 0 0 0;
   }
 `;
 
@@ -32,10 +38,13 @@ export const Logo = styled.div`
   }
   &:hover {
     transform: scale(1.05);
+    span {
+      color: ${p => p.theme.colors.brand.green};
+    }
   }
   span {
     margin: 0 8px;
-    color: ${p => p.theme.colors.brand.green};
+    color: ${p => p.theme.colors.complementary.green};
   }
 `;
 
@@ -44,21 +53,18 @@ export const Navigation = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
     justify-content: flex-end;
-    
   }
 `;
 
 export const NavLink = styled.a`
-position: relative;
+  position: relative;
   font-size: 16px;
   line-height: 1.375;
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
     font-size: 18px;
   }
-
   &:hover {
     &::after {
       content: '';
@@ -71,8 +77,12 @@ position: relative;
       background-color: ${p => p.theme.colors.brand.green};
     }
   }
-  
   &:not(:last-child) {
-    margin: 0 20px 0 0;
+    @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
+      margin: 0 20px 0 0;
+    }
+    @media screen and (min-width: ${p => p.theme.breakpoints.desktop}) {
+      margin: 0 40px 0 0;
+    }
   }
 `;
