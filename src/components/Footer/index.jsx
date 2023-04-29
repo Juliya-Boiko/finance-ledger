@@ -4,7 +4,7 @@ import { Socials } from "../Socials";
 export const Footer = () => {
   return (
     <FooterSection>
-      <Socials />
+      <Socials facebook="" twitter="" youtube="" linkedin="" />
       <FooterText>Copyright &#169; 2021 - FinanceLedger</FooterText>
     </FooterSection>
   );

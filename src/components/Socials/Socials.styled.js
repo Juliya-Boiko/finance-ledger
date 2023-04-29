@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const SocialsList = styled.ul`
+  width: 216px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const SocialItem = styled.li`
-  &:not(:last-child) {
-    margin: 0 25px 0 0;
-  }
   &:hover {
     svg {
       fill: ${p => p.theme.colors.brand.green};

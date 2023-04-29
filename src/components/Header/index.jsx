@@ -2,8 +2,6 @@ import { Container } from "../../styles/common/Container.styled";
 import { ReactComponent as LogoIcon } from '../../images/icons/logo.svg';
 import { HeaderSection, HeaderContent, Logo, Navigation, NavLink } from "./Header.styled";
 
-
-
 export const Header = () => {
   return (
     <HeaderSection>
