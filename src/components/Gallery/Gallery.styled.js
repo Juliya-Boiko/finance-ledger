@@ -21,7 +21,12 @@ export const GalleryList = styled.ul`
 `;
 
 export const GalleryItem = styled.li`
-  background-color: red;
+  //background-color: red;
+  transition: ${p => p.theme.transition};
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  } 
 `;
 
 export const GalleryImage = styled.img`

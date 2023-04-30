@@ -18,6 +18,9 @@ const Button = styled.button`
   &:hover {
     background-color: ${p => p.theme.colors.complementary.green};
   }
+  svg {
+    fill: ${p => p.theme.colors.brand.white};
+  }
 `;
 
 export const ButtonPrimary = ({ children }) => {

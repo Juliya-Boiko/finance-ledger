@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Arrow } from '../../images/icons/arrow.svg';
 
 const Button = styled.button`
   display: flex;
@@ -19,11 +20,19 @@ const Button = styled.button`
     border-color: ${p => p.accent};
     color: ${p => p.accent};
     background-color: ${p => p.theme.colors.brand.white};
+    svg {
+      fill: ${p => p.accent};
+    }
+  }
+  svg {
+    margin: 0 5px 0 0;
+    fill: ${p => p.theme.colors.brand.white};
+    transition: ${p => p.theme.transition};
   }
 `;
 
 export const ButtonOutlined = ({ children, accent }) => {
   return (
-    <Button type='button' accent={accent}>{children}</Button>
+    <Button type='button' accent={accent}><Arrow />{children}</Button>
   );
 };

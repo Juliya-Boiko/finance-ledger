@@ -55,6 +55,7 @@ export const Logo = styled.div`
   span {
     margin: 0 8px;
     color: ${p => p.theme.colors.complementary.green};
+    transition: ${p => p.theme.transition};
   }
 `;
 
