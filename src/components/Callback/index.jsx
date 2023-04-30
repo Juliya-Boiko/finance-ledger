@@ -1,4 +1,5 @@
-import { CallbackSection, CallbackImage, CallbackContent, CallbackTitle, CallbackForm, CallbackLabel, CallbackInput, CallbackLegend, CallbackError } from "./Callback.styled";
+import { CallbackSection, CallbackImage, CallbackContent, CallbackForm, CallbackLabel, CallbackInput, CallbackLegend, CallbackError } from "./Callback.styled";
+import { SectionTitle } from "../../styles/common/SectionTitle.styled";
 import { Formik } from "formik";
 import { ButtonSubmit } from "../buttons/ButtonSubmit";
 import { useState } from "react";
@@ -31,7 +32,6 @@ export const CallBack = () => {
     } else {
       setShowError(false);
       setShowModal(true);
-      //console.log(values);
     }
   };
   
@@ -39,7 +39,7 @@ export const CallBack = () => {
     <CallbackSection id="contact">
       <CallbackImage></CallbackImage>
       <CallbackContent>
-        <CallbackTitle>Request Callback</CallbackTitle>
+        <SectionTitle maxWidth="auto">Request Callback</SectionTitle>
          <Formik
             initialValues={initialValues}
             onSubmit={submitHandler}

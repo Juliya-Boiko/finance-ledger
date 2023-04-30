@@ -15,7 +15,6 @@ const Button = styled.button`
   background-color: ${p => p.theme.colors.complementary.green};
   transition: ${p => p.theme.transition};
   cursor: pointer;
- 
   &:hover {
     background-color: ${p => p.theme.colors.brand.green};
   }

@@ -8,7 +8,7 @@ export const GalleryList = styled.ul`
   grid-column-gap: 0px;
   grid-row-gap: 8px;
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 148px);
     grid-column-gap: 18px;
     grid-row-gap: 18px;
@@ -21,7 +21,6 @@ export const GalleryList = styled.ul`
 `;
 
 export const GalleryItem = styled.li`
-  //background-color: red;
   transition: ${p => p.theme.transition};
   cursor: pointer;
   &:hover {

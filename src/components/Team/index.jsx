@@ -1,5 +1,6 @@
 import { Container } from '../../styles/common/Container.styled';
-import { TeamSection, TeamContent, TeamSubtitle, TeamTitle, TeamText, TeamList, TeamItem, TeamPhoto, TeamName, TeamWrapper, TeamLayout } from './Team.styled';
+import { SectionTitle } from "../../styles/common/SectionTitle.styled";
+import { TeamSection, TeamContent, TeamSubtitle, TeamText, TeamList, TeamItem, TeamPhoto, TeamName, TeamWrapper, TeamLayout } from './Team.styled';
 import { Socials } from '../Socials';
 
 const team = [
@@ -44,7 +45,7 @@ export const Team = () => {
       <Container>
         <TeamContent>
           <TeamSubtitle>Who we are</TeamSubtitle>
-          <TeamTitle>Our Professional Team</TeamTitle>
+          <SectionTitle maxWidth="auto">Our Professional Team</SectionTitle>
           <TeamText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</TeamText>
           <TeamList>
             {team.map(({ id, name, position, links }) => {

@@ -1,10 +1,5 @@
 import styled from "styled-components";
-import { keyframes } from 'styled-components'
-
-const smoothScroll = keyframes`
-  0% { transform: translateY(-80px); }
-  100% { transform: translateY(0px); }
-`;
+import { smoothScroll } from "../../styles/common/keyframes.styled";
 
 export const HeaderSection = styled.header`
   width: 100%;

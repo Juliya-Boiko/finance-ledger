@@ -10,24 +10,19 @@ const data = [
   { id: 4 },
   { id: 5 },
   { id: 6 },
+  { id: 7 },
+  { id: 8 },
 ];
 
 const initialState = { isOpen: false, index: 1 };
 
 export const Gallery = () => {
   const [lightboxState, setLightboxState] = useState(initialState);
-  console.log(lightboxState.index);
+  const limiter = { firstElem: 1, lastElem: data.length};
 
   const lightboxHandler = (id) => {
     setLightboxState({ isOpen: true, index: id, })
-    console.log(id);
   };
-
-  // const nextSrcLoader = (id) => {
-  //   console.log(id);
-  //   return id === 5 ? undefined : require(`../../images/cases/cases${lightboxState.index + 1}.jpg`)
-  //   // lightboxState.index === 6 ? require(`../../images/cases/cases${lightboxState.index + 1}.jpg`) : undefined 
-  // };
 
   return (
     <div id="cases">
@@ -52,8 +47,8 @@ export const Gallery = () => {
             enableZoom={false}
             clickOutsideToClose={true}
             mainSrc={require(`../../images/cases/cases${lightboxState.index}.jpg`)}
-            nextSrc={ lightboxState.index === 6 ? undefined : require(`../../images/cases/cases${lightboxState.index + 1}.jpg`)}
-            prevSrc={ lightboxState.index > 1 ? require(`../../images/cases/cases${lightboxState.index - 1}.jpg`) : undefined}
+            nextSrc={ lightboxState.index === limiter.lastElem ? undefined : require(`../../images/cases/cases${lightboxState.index + 1}.jpg`)}
+            prevSrc={ lightboxState.index > limiter.firstElem ? require(`../../images/cases/cases${lightboxState.index - 1}.jpg`) : undefined}
             onCloseRequest={() => setLightboxState(initialState)}
             onMovePrevRequest={() => setLightboxState(prevState => { 
               return { isOpen: true, index: prevState.index - 1 }

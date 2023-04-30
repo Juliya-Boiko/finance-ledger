@@ -8,7 +8,6 @@ export const Modal = ({ onClick }) => {
         <ModalTitle>Thank you!</ModalTitle>
         <p>Youre form submission has been recieved</p>
         <ButtonModal type="button" title="Back to our site" onClick={onClick} />
-        {/* <button type="button" onClick={onClick}>Back to our site</button> */}
       </ModalContent>
     </ModalBackdrop>
   );

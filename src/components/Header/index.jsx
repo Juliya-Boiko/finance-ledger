@@ -11,7 +11,7 @@ export const Header = () => {
     e.preventDefault();
     const anchorName = e.target.href.toString().split('#')[1];
     const anchorTarget = document.getElementById(anchorName);
-    anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const scrollHandler = (elTopOffset, elHeight) => {
@@ -28,7 +28,6 @@ export const Header = () => {
       scrollHandler(header.top, header.height)
     }
     window.addEventListener('scroll', scrollEventHandler);
-
     return () => {
       window.removeEventListener('scroll', scrollEventHandler);
     };

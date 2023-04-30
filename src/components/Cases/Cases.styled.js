@@ -27,13 +27,3 @@ export const CasesText = styled.p`
     font-size: 18px;
   }
 `;
-
-export const CasesTitle = styled.h2`
-  max-width: 220px;
-  margin: 0 0 24px 0;
-  font-size: 32px;
-  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
-    max-width: 100%;
-    font-size: 40px;
-  }
-`;

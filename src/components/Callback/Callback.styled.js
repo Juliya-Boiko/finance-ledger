@@ -49,17 +49,6 @@ export const CallbackContent = styled.div`
   }
 `;
 
-export const CallbackTitle = styled.h2`
-  margin: 0 0 70px 0;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1.5;
-  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
-    margin: 0 0 24px 0;
-    font-size: 40px;
-  }
-`;
-
 export const CallbackForm = styled(Form)`
   display: flex;
   flex-direction: column;

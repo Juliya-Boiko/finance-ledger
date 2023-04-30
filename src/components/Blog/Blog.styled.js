@@ -58,11 +58,3 @@ export const BlogText = styled.p`
     font-size: 18px;
   }
 `;
-
-export const BlogTitle = styled.h2`
-  margin: 0 0 24px 0;
-  font-size: 32px;
-  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
-    font-size: 40px;
-  }
-`;

@@ -26,14 +26,6 @@ export const TeamSubtitle = styled.p`
   }
 `;
 
-export const TeamTitle = styled.h2`
-  margin: 0 0 24px 0;
-  font-size: 32px;
-  @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
-    font-size: 40px;
-  }
-`;
-
 export const TeamText = styled.p`
   margin: 0 0 63px 0;
   font-size: 16px;
@@ -126,4 +118,3 @@ export const TeamName = styled.p`
     font-size: 32px;
   }
 `;
-
