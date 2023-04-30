@@ -4,7 +4,7 @@ import { ReactComponent as Arrow } from '../../images/icons/arrow.svg';
 
 export const Hero = () => {
   return (
-    <HeroSection>
+    <HeroSection id="home">
       <HeroTitle>The Sky Is The Limit</HeroTitle>
       <HeroText>We provide world class financial assistance</HeroText>
       <ButtonPrimary>

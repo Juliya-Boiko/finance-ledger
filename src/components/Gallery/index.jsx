@@ -17,7 +17,7 @@
 export const Gallery = () => {
 
   return (
-    <div>gallery</div>
+    <div id="cases">gallery</div>
     // <LightGallery
     //   elementClassNames="custom-wrapper-class"
     //   hideControlOnEnd={true}

@@ -36,7 +36,7 @@ export const CallBack = () => {
   };
   
   return (
-    <CallbackSection>
+    <CallbackSection id="contact">
       <CallbackImage></CallbackImage>
       <CallbackContent>
         <CallbackTitle>Request Callback</CallbackTitle>

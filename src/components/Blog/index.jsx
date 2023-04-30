@@ -4,7 +4,7 @@ import { theme } from "../../styles/theme";
 
 export const Blog = () => {
   return (
-    <BlogSection>
+    <BlogSection id="blog">
       <BlogImage></BlogImage>
       <BlogContent>
         <BlogText>April 16 2020</BlogText>

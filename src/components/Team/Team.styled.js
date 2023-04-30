@@ -85,6 +85,7 @@ export const TeamWrapper = styled.div`
     margin: 0 0 15px 0;
   }
   &:hover {
+    transform: scale(1.01);
     box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
     div {
       display: flex;
@@ -103,7 +104,7 @@ export const TeamLayout = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: ${p => p.theme.transition};
 `;
 

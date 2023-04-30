@@ -4,25 +4,25 @@ import { ReactComponent as Facebook } from '../../images/icons/facebook.svg';
 import { ReactComponent as LinkedIn } from '../../images/icons/linkedin.svg';
 import { ReactComponent as Youtube } from '../../images/icons/youtube.svg';
 
-export const Socials = ({ facebook, twitter, youtube, linkedin }) => {
+export const Socials = ({ facebook, twitter, youtube, linkedin, colored }) => {
   return (
     <SocialsList>
-      <SocialItem>
+      <SocialItem colored={colored}>
         <a href={facebook}>
           <Facebook />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem colored={colored}>
       <a href={twitter}>
         <Twitter />
       </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem colored={colored}>
         <a href={youtube}>
           <Youtube />
         </a>
       </SocialItem>
-      <SocialItem>
+      <SocialItem colored={colored}>
         <a href={linkedin}>
           <LinkedIn />
         </a>

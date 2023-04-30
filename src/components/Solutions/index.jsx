@@ -4,7 +4,7 @@ import { theme } from "../../styles/theme";
 
 export const Solutions = () => {
   return (
-    <SolutionsSection>
+    <SolutionsSection id="about">
       <SolutionsImage></SolutionsImage>
       <SolutionsContent>
         <SolutionsText>What you are looking for</SolutionsText>

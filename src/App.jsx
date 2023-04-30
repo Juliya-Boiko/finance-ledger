@@ -1,4 +1,4 @@
-//import { Header } from "./components/Header";
+import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Solutions } from "./components/Solutions";
 import { Cases } from "./components/Cases";
@@ -10,7 +10,7 @@ import { Footer } from "./components/Footer";
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main>
         <Hero />
         <Solutions />

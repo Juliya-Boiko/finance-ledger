@@ -10,7 +10,7 @@ export const SocialsList = styled.ul`
 export const SocialItem = styled.li`
   &:hover {
     svg {
-      fill: ${p => p.theme.colors.brand.green};
+      fill: ${p => p.colored ? p.theme.colors.brand.green : 'rgba(255, 255, 255, 0.5)'};
     }
   }
   svg {

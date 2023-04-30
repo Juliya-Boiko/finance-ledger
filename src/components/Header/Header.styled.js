@@ -1,17 +1,27 @@
 import styled from "styled-components";
+import { keyframes } from 'styled-components'
+
+const smoothScroll = keyframes`
+  0% { transform: translateY(-80px); }
+  100% { transform: translateY(0px); }
+`;
 
 export const HeaderSection = styled.header`
   width: 100%;
-  position: absolute;
+  position: ${p => p.sticky ? 'fixed' : 'absolute'};
   top: 0;
   left: 0;
-  padding: 22px 0 0 0;
+  z-index: 20;
+  padding: 22px 0;
   color: ${p => p.theme.colors.brand.white};
+  transition: ${p => p.theme.transition};
+  animation: ${smoothScroll} 0.5s forwards;
+  background-color: ${p => p.sticky ? 'rgba(0, 0, 0, 0.8)' : 'transparent'};
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
-    padding: 16px 0 0 0;
+    padding: 16px 0;
   }
   @media screen and (min-width: ${p => p.theme.breakpoints.desktop}) {
-    padding: 32px 0 0 0;
+    padding: 32px 0;
   }
 `;
 
@@ -69,11 +79,11 @@ export const NavLink = styled.a`
     &::after {
       content: '';
       display: block;
-      width: 150%;
+      width: 110%;
       height: 2px;
       position: absolute;
       bottom: -10px;
-      left: -25%;
+      left: -5%;
       background-color: ${p => p.theme.colors.brand.green};
     }
   }

@@ -12,19 +12,19 @@ export const HeroSection = styled.section`
   text-align: center;
   color: ${p => p.theme.colors.brand.white};
   background-color: #000000;
-  background-image: url(${bgiJpg1x});
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgiJpg1x});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  @supports (background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgiWebP1x})) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgiWebP1x});
+  @supports (background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgiWebP1x})) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgiWebP1x});
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgiJpg2x});
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgiJpg2x});
       @supports (background-image: url(${bgiWebP2x})) {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgiWebP2x});
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgiWebP2x});
       }
   }
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
