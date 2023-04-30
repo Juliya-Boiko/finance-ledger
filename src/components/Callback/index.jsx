@@ -32,6 +32,7 @@ export const CallBack = () => {
     } else {
       setShowError(false);
       setShowModal(true);
+      setValues(initialValues);
     }
   };
   
