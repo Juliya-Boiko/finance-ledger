@@ -52,11 +52,11 @@ export const Team = () => {
                 <TeamWrapper>
                   <picture>
                     <source
-                        srcset={`${require(`../../images/team/person${id}.webp`)} 1x, ${require(`../../images/team/person${id}@2x.webp`)} 2x,`}
+                        srcSet={`${require(`../../images/team/person${id}.webp`)} 1x, ${require(`../../images/team/person${id}@2x.webp`)} 2x,`}
                         type="image/webp" />
                     <TeamPhoto
                         src={require(`../../images/team/person${id}.jpg`)} alt={name}
-                        srcset={`${require(`../../images/team/person${id}@2x.jpg`)} 2x`} />
+                        srcSet={`${require(`../../images/team/person${id}@2x.jpg`)} 2x`} />
                   </picture>
                   <TeamLayout><Socials facebook={links.facebook} twitter={links.twitter} youtube={links.youtube} linkedin={links.linkedin} /></TeamLayout>
                 </TeamWrapper>
