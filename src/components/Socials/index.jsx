@@ -8,22 +8,22 @@ export const Socials = ({ facebook, twitter, youtube, linkedin, colored }) => {
   return (
     <SocialsList>
       <SocialItem colored={colored}>
-        <a href={facebook}>
+        <a href={facebook} target="_blank" rel="noreferrer" aria-label="Go to Facebook">
           <Facebook />
         </a>
       </SocialItem>
       <SocialItem colored={colored}>
-      <a href={twitter}>
+      <a href={twitter} target="_blank" rel="noreferrer" aria-label="Go to Twitter">
         <Twitter />
       </a>
       </SocialItem>
       <SocialItem colored={colored}>
-        <a href={youtube}>
+        <a href={youtube} target="_blank" rel="noreferrer" aria-label="Go to Youtube">
           <Youtube />
         </a>
       </SocialItem>
       <SocialItem colored={colored}>
-        <a href={linkedin}>
+        <a href={linkedin} target="_blank" rel="noreferrer" aria-label="Go to LinkedIn">
           <LinkedIn />
         </a>
       </SocialItem>

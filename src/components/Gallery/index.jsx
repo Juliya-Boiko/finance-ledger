@@ -3,16 +3,7 @@ import { GalleryList, GalleryItem, GalleryImage } from "./Gallery.styled";
 import Lightbox from 'react-18-image-lightbox';
 import 'react-18-image-lightbox/style.css';
 
-const data = [
-  { id: 1 }, 
-  { id: 2 },
-  { id: 3 },
-  { id: 4 },
-  { id: 5 },
-  { id: 6 },
-  { id: 7 },
-  { id: 8 },
-];
+const data = [ { id: 1 },  { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 } ];
 
 const initialState = { isOpen: false, index: 1 };
 
@@ -30,14 +21,8 @@ export const Gallery = () => {
         {data.map(({ id }) => {
           return <GalleryItem key={id} onClick={() => lightboxHandler(id)}>
             <picture>
-              <source
-                srcSet={`${require(`../../images/cases/cases${id}.webp`)} 1x, ${require(`../../images/cases/cases${id}@2x.webp`)} 2x,`}
-                type="image/webp" />
-              <GalleryImage
-                src={require(`../../images/cases/cases${id}.jpg`)} 
-                srcSet={`${require(`../../images/cases/cases${id}@2x.jpg`)} 2x`}
-                alt={`Case ${id}`}
-              />
+              <source srcSet={`${require(`../../images/cases/cases${id}.webp`)} 1x, ${require(`../../images/cases/cases${id}@2x.webp`)} 2x,`} type="image/webp" />
+              <GalleryImage src={require(`../../images/cases/cases${id}.jpg`)}  srcSet={`${require(`../../images/cases/cases${id}@2x.jpg`)} 2x`} alt={`Case ${id}`} loading="lazy" />
             </picture>
         </GalleryItem>
         })}

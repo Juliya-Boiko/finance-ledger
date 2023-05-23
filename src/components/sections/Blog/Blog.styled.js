@@ -1,16 +1,21 @@
 import styled from "styled-components";
-import bgiJpg1x from '../../images/home/blog.jpg';
-import bgiJpg2x from '../../images/home/blog@2x.jpg';
-import bgiWebP1x from '../../images/home/blog.webp';
-import bgiWebP2x from '../../images/home/blog@2x.webp';
+import bgiJpg1x from '../../../images/home/blog.jpg';
+import bgiJpg2x from '../../../images/home/blog@2x.jpg';
+import bgiWebP1x from '../../../images/home/blog.webp';
+import bgiWebP2x from '../../../images/home/blog@2x.webp';
 
 export const BlogSection = styled.section`
   color: ${p => p.theme.colors.brand.white};
   background-color: ${p => p.theme.colors.complementary.blue};
+  scroll-margin-top: 120px;
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
     display: flex;
     flex-direction: row-reverse;
+    scroll-margin-top: 80px;
   }
+  @media screen and (min-width: ${p => p.theme.breakpoints.desktop}) {
+    scroll-margin-top: 110px;
+  };
 `;
 
 export const BlogImage = styled.div`

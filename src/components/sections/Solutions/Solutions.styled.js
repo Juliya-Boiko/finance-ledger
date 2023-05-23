@@ -1,15 +1,20 @@
 import styled from "styled-components";
-import bgiJpg1x from '../../images/home/people.jpg';
-import bgiJpg2x from '../../images/home/people@2x.jpg';
-import bgiWebP1x from '../../images/home/people.webp';
-import bgiWebP2x from '../../images/home/people@2x.webp';
+import bgiJpg1x from '../../../images/home/people.jpg';
+import bgiJpg2x from '../../../images/home/people@2x.jpg';
+import bgiWebP1x from '../../../images/home/people.webp';
+import bgiWebP2x from '../../../images/home/people@2x.webp';
 
 export const SolutionsSection = styled.section`
   color: ${p => p.theme.colors.brand.white};
   background-color: ${p => p.theme.colors.complementary.green};
+  scroll-margin-top: 120px;
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
     display: flex;
+    scroll-margin-top: 80px;
   }
+  @media screen and (min-width: ${p => p.theme.breakpoints.desktop}) {
+    scroll-margin-top: 110px;
+  };
 `;
 
 export const SolutionsImage = styled.div`

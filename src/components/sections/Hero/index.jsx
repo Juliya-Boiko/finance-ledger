@@ -1,6 +1,6 @@
 import { HeroSection, HeroTitle, HeroText, HeroButtonText } from "./Hero.styled";
-import { ButtonPrimary } from "../buttons/ButtonPrimary";
-import { ReactComponent as Arrow } from '../../images/icons/arrow.svg';
+import { ButtonPrimary } from "../../../components/buttons/ButtonPrimary";
+import { ReactComponent as Arrow } from '../../../images/icons/arrow.svg';
 
 export const Hero = () => {
   return (

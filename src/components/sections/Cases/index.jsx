@@ -1,7 +1,7 @@
 import { CasesSection, CasesContent, CasesText } from "./Cases.styled";
-import { Container } from "../../styles/common/Container.styled";
-import { SectionTitle } from "../../styles/common/SectionTitle.styled";
-import { Gallery } from "../Gallery";
+import { Container } from "../../../styles/common/Container.styled";
+import { SectionTitle } from "../../../styles/common/SectionTitle.styled";
+import { Gallery } from "../../../components/Gallery";
 
 export const Cases = () => {
   return (

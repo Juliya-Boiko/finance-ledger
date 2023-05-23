@@ -1,7 +1,7 @@
 import { SolutionsSection, SolutionsImage, SolutionsContent, SolutionsText } from "./Solutions.styled";
-import { ButtonOutlined } from "../buttons/ButtonOutlined";
-import { theme } from "../../styles/theme";
-import { SectionTitle } from "../../styles/common/SectionTitle.styled";
+import { ButtonOutlined } from "../../../components/buttons/ButtonOutlined";
+import { theme } from "../../../styles/theme";
+import { SectionTitle } from "../../../styles/common/SectionTitle.styled";
 
 export const Solutions = () => {
   return (

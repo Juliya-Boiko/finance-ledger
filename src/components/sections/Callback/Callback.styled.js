@@ -1,15 +1,20 @@
 import styled from "styled-components";
 import { Form, Field } from "formik";
-import bgiJpg1x from '../../images/home/contact.jpg';
-import bgiJpg2x from '../../images/home/contact@2x.jpg';
-import bgiWebP1x from '../../images/home/contact.webp';
-import bgiWebP2x from '../../images/home/contact@2x.webp';
+import bgiJpg1x from '../../../images/home/contact.jpg';
+import bgiJpg2x from '../../../images/home/contact@2x.jpg';
+import bgiWebP1x from '../../../images/home/contact.webp';
+import bgiWebP2x from '../../../images/home/contact@2x.webp';
 
 export const CallbackSection = styled.section`
   background-color: ${p => p.theme.colors.grayScale.gray1};
+  scroll-margin-top: 120px;
   @media screen and (min-width: ${p => p.theme.breakpoints.tablet}) {
     display: flex;
+    scroll-margin-top: 80px;
   }
+  @media screen and (min-width: ${p => p.theme.breakpoints.desktop}) {
+    scroll-margin-top: 110px;
+  };
 `;
 
 export const CallbackImage = styled.div`

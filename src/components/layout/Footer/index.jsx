@@ -1,5 +1,5 @@
 import { FooterSection, FooterText } from "./Footer.styled";
-import { Socials } from "../Socials";
+import { Socials } from "../../Socials";
 
 export const Footer = () => {
   return (

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import bgiJpg1x from '../../images/home/showcase.jpg';
-import bgiJpg2x from '../../images/home/showcase@2x.jpg';
-import bgiWebP1x from '../../images/home/showcase.webp';
-import bgiWebP2x from '../../images/home/showcase@2x.webp';
+import bgiJpg1x from '../../../images/home/showcase.jpg';
+import bgiJpg2x from '../../../images/home/showcase@2x.jpg';
+import bgiWebP1x from '../../../images/home/showcase.webp';
+import bgiWebP2x from '../../../images/home/showcase@2x.webp';
 
 export const HeroSection = styled.section`
   display: flex;

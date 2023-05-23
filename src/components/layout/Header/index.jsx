@@ -1,6 +1,7 @@
-import { Container } from "../../styles/common/Container.styled";
-import { ReactComponent as LogoIcon } from '../../images/icons/logo.svg';
-import { HeaderSection, HeaderContent, Logo, Navigation, NavLink } from "./Header.styled";
+import { Container } from "../../../styles/common/Container.styled";
+import { Logo } from "../../Logo";
+import { Navigation } from "../../Navigation";
+import { HeaderSection, HeaderContent } from "./Header.styled";
 import { useState, useEffect, useRef } from "react";
 
 export const Header = () => {
@@ -37,18 +38,8 @@ export const Header = () => {
     <HeaderSection sticky={sticky.isSticky} id="sticky-header" ref={headerRef}>
       <Container>
         <HeaderContent>
-          <Logo>
-            <LogoIcon />
-            <span>Finance</span>
-            Ledger
-          </Logo>
-          <Navigation>
-            <NavLink href="#home" onClick={anchorHandler}>Home</NavLink>
-            <NavLink href="#about" onClick={anchorHandler}>About</NavLink>
-            <NavLink href="#cases" onClick={anchorHandler}>Cases</NavLink>
-            <NavLink href="#blog" onClick={anchorHandler}>Blog</NavLink>
-            <NavLink href="#contact" onClick={anchorHandler}>Contact</NavLink>
-          </Navigation>
+          <Logo />
+          <Navigation onClick={anchorHandler} />
         </HeaderContent>  
       </Container>
     </HeaderSection>
